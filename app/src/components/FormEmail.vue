@@ -68,8 +68,9 @@ export default {
 
     // METHODS
     const getHost = () => {
-      const parts = window.origin.split(":")[1];
-      return `http:${parts}:3000`;
+      const parts = window.origin.split(":");
+      parts.pop();
+      return `${parts.join(":")}:3000`;
     };
     const request = async () => {
       const { ok } = await fetch(urlFetch.value);
