@@ -1,6 +1,7 @@
 package main
 
 import (
+	"crypto/tls"
 	"fmt"
 	"os"
 	"strconv"
@@ -60,6 +61,7 @@ func send(subject, email, message string) error {
 	`, message))
 
 	d := gomail.NewDialer(host, port, username, password)
+	d.TLSConfig = &tls.Config{InsecureSkipVerify: true}
 
 	return d.DialAndSend(m)
 }
