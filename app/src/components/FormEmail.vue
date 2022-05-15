@@ -51,7 +51,7 @@ export default {
     // DATA
     const alert = ref(null);
     const subject = ref("Aqui vai um assunto legal");
-    const email = ref("seu_email@gmail.com");
+    const email = ref("remetente@gmail.com");
     const message = ref("Aqui vai a mensagem que você deseja enviar");
     const inProcess = ref(false);
 
