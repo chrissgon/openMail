@@ -2,7 +2,6 @@
 # OpenMail
 Aplicação de envio de email criada com Vue + Golang + Docker.
 
-
 ## Clonar Repositório
 Inicialmente é necessário clonar o repositório principal do projeto com
 `git clone git@github.com:chrissgon/openMail.git`.
